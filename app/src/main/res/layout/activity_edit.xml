@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf5e6"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/titlebar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Edit_Title_Height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/titlebar_bk_shape"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#ccffffff"
+        android:textSize="@dimen/Edit_Title_TextSize" />
+
+    <Button
+        android:id="@+id/button_cancel_edit"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/Edit_Title_Height"
+        android:layout_alignBottom="@+id/titlebar_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#00222222"
+        android:text="×"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/Edit_Button_TextSize" />
+
+    <Button
+        android:id="@+id/button_save_edit"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/Edit_Title_Height"
+        android:layout_alignBottom="@+id/titlebar_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00222222"
+        android:text="√"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/Edit_Button_TextSize" />
+
+    <TextView
+        android:id="@+id/edit_timebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Edit_Time_Height"
+        android:layout_below="@+id/titlebar_edit"
+        android:layout_alignLeft="@+id/edit_content"
+        android:layout_alignRight="@+id/edit_content"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#cdaa7d"
+        android:textSize="@dimen/Edit_Time_TextSize" />
+
+    <com.racecoder.simplememo.view.LinedEditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_timebar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusableInTouchMode="true"
+        android:background="@null"
+        android:hint="@string/write_content_hint"
+        android:textColorHint="@color/edit_hint_text"
+        android:inputType="none|text|textMultiLine|textNoSuggestions"
+        android:lineSpacingExtra="18dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/edit_text"
+        android:textSize="@dimen/Edit_Content_TextSize" />
+
+</RelativeLayout>

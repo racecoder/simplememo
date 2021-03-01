@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Widget_Title_Height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#66ffffff"
+        android:gravity="center_vertical"
+        android:text="  Todo"
+        android:textColor="#ff553f32"
+        android:textSize="@dimen/Widget_Title_TextSize" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="@dimen/Widget_Title_Height"
+        android:layout_height="@dimen/Widget_Title_Height"
+        android:layout_alignRight="@+id/title"
+        android:background="@drawable/add_memo" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffc0ff3e" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/line"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:divider="#80FFFFFF"
+        android:dividerHeight="2px"
+        android:background="#99FFFFFF" />
+</RelativeLayout>

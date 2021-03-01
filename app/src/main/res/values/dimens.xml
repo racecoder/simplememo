@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Refer to App Widget Documentation for margin information
+    http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
+
+    <dimen name="activity_horizontal_margin">15dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <!--Widget “Todo” 字体大小-->
+    <dimen name="Widget_Title_TextSize">25sp</dimen>
+    <!--Widget标题栏高度-->
+    <dimen name="Widget_Title_Height">50dp</dimen>
+    <!--Widget每行高度-->
+    <dimen name="Widget_Item_Height">40dp</dimen>
+    <!--Widget每行文字大小-->
+    <dimen name="Widget_Item_TextSize">18sp</dimen>
+    <!--Widget删除框大小-->
+    <dimen name="Widget_Item_ButtonTextSize">25sp</dimen>
+
+    <dimen name="Edit_Title_TextSize">20sp</dimen>
+    <dimen name="Edit_Title_Height">50dp</dimen>
+    <dimen name="Edit_Button_TextSize">30sp</dimen>
+    <dimen name="Edit_Content_TextSize">18sp</dimen>
+
+    <dimen name="Edit_Time_Height">30dp</dimen>
+    <dimen name="Edit_Time_TextSize">15sp</dimen>
+</resources>

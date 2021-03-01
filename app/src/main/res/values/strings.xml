@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">极简便签</string>
+    <string name="write_content_hint">想写点什么呢</string>
+</resources>
